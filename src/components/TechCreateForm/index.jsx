@@ -22,6 +22,10 @@ export const TechCreateForm = () => {
                     <Link to="/" className={styled.Link}>voltar</Link>
                 </div>
                 <form onSubmit={handleSubmit(submit)}>
+                    <div className={styled.FormTitle}>
+                        <h1 className="title1">Crie sua conta</h1>
+                        <p className="headline">Rápido e grátis, vamos nessa</p>
+                    </div>
                     <div className={styled.InputContainer} >
                         <label>Nome</label>
                         <input className="headline" placeholder="Digite aqui o seu nome" type="text" {...register("name", { required: true })} />

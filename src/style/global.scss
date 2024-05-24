@@ -13,6 +13,13 @@
 }
 
 body{
-    /*background: var(--grey-4);*/
+    max-width: 2000px;
+    max-height: 2000px;
+
     font-family: var(--font);
+    background: var(--grey-4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
