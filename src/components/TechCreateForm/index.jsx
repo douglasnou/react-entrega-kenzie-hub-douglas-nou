@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { UserContext } from "../Providers/UserContext";
 import { Toaster } from "react-hot-toast";
-import logo from "./../../assets/Logo.png"
+import logo from "./../../assets/Logo.png";
 import styled from "./style.module.scss";
 
 export const TechCreateForm = () => {
