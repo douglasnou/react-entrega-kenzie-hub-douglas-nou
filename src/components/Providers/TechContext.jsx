@@ -6,7 +6,7 @@ export const TechContext = createContext({});
 
 export const TechProvider = ({children})=>{
     const [editingTech, setEditingTech] = useState(null);
-    const {user} = useContext(UserContext)
+    const {user} = useContext(UserContext);
     const [techList, setTechList] = useState(user.techs);
 
     const createTech = async (formData) =>{
@@ -44,12 +44,12 @@ export const TechProvider = ({children})=>{
             setTechList(newTech);
             setEditingTech(null);
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
     }
 
     const deleteTech = async (deletingId)=>{
-        const token = localStorage.getItem("@TOKEN")
+        const token = localStorage.getItem("@TOKEN");
         try {
             await api.delete(`/users/techs/${deletingId}`,{
                 headers:{
