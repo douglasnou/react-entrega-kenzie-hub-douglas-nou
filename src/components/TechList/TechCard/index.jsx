@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext } from "react";
 import { TechContext } from "../../Providers/TechContext"
 import { FaRegTrashCan } from "react-icons/fa6";
 import { MdOutlineModeEdit } from "react-icons/md";
