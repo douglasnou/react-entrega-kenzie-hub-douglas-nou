@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { UserContext } from "../../components/Providers/UserContext";
 import { TechProvider } from "../../components/Providers/TechContext";
 import { DashboardPage } from "./DashboardPage";
-import { LogoutPage } from "./LogoutPage";
+import { ReturnLoginPage } from "./ReturnLoginPage";
 
 export const HomePage = () => {
     const { user } = useContext(UserContext);
@@ -15,7 +15,7 @@ export const HomePage = () => {
             )
                 :
                 (
-                    <LogoutPage />
+                    <ReturnLoginPage />
                 )}
         </main>
     )
