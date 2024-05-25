@@ -5,7 +5,7 @@ import { LoginPage } from "./LoginPage";
 import { LogoutPage } from "./LogoutPage";
 
 export const HomePage = () => {
-    const { user } = useContext(UserContext)
+    const { user } = useContext(UserContext);
     return (
         <main>
             {user ? (
@@ -16,7 +16,7 @@ export const HomePage = () => {
                 :
                 (
                     <LogoutPage />
-                )}
+                )};
         </main>
     )
 }
