@@ -1,6 +1,6 @@
-import { useContext } from "react"
-import { TechList } from "../../../components/TechList"
-import { UserContext } from "../../../components/Providers/UserContext"
+import { useContext } from "react";
+import { TechList } from "../../../components/TechList";
+import { UserContext } from "../../../components/Providers/UserContext";
 import { ToastContainer } from "react-toastify";
 import logo from "./../../../assets/Logo.png";
 import styled from "./style.module.scss";
