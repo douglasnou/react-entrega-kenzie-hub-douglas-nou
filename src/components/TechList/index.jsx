@@ -7,7 +7,7 @@ import styled from "./style.module.scss";
 import { EditTechModal } from "../EditTechModal";
 
 export const TechList = () => {
-    const { techList } = useContext(TechContext)
+    const { techList } = useContext(TechContext);
     const [isOpen, setIsOpen] = useState(false);
     const [isOpenTo, setIsOpenTo] = useState(false);
     return (
@@ -22,7 +22,7 @@ export const TechList = () => {
                 {
                     techList.map((tech) => (
                         <TechCard setIsOpenTo={setIsOpenTo} isOpenTo={isOpenTo} tech={tech} key={tech.id} />
-                    ))
+                    ));
                 }
             </ul>
             { isOpen ? <CreateTechModal setIsOpen={setIsOpen} /> : null }
