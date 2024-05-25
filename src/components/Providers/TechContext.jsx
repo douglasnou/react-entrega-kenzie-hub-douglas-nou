@@ -1,12 +1,12 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { api } from "../../service/api";
 import { UserContext } from "./UserContext";
 
 export const TechContext = createContext({});
 
 export const TechProvider = ({children})=>{
-    const [editingTech, setEditingTech] = useState(null);
     const {user} = useContext(UserContext);
+    const [editingTech, setEditingTech] = useState(null);
     const [techList, setTechList] = useState(user.techs);
 
     const createTech = async (formData) =>{
@@ -63,7 +63,7 @@ export const TechProvider = ({children})=>{
         }
     }
     return(
-        <TechContext.Provider value={{techList, setTechList, createTech, deleteTech, updateTech, editingTech, setEditingTech}} >
+        <TechContext.Provider value={{techList, user, setTechList, createTech, deleteTech, updateTech, editingTech, setEditingTech}} >
             {children}
         </TechContext.Provider>
     )

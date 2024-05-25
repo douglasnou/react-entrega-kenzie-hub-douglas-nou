@@ -7,6 +7,7 @@ export const UserContext = createContext({});
 
 export const UserProvider = ({ children }) => {
     const [user, setUser] = useState(null);
+    const [techList, setTechList] = useState();
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
     const notifySuccessSub = ()=> toast.success("Cadastro realizado com sucesso!",{
@@ -87,7 +88,7 @@ export const UserProvider = ({ children }) => {
         notifySuccessLogout();
     }
     return (
-        <UserContext.Provider value={{ user, userRegister, userLogin, userLogout, notifySuccessLogin, notifySuccessSub }}>
+        <UserContext.Provider value={{ user, userRegister, userLogin, userLogout, notifySuccessLogin, notifySuccessSub, techList, setTechList }}>
             {children}
         </UserContext.Provider>
     )

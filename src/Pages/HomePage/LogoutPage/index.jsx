@@ -1,9 +1,9 @@
-import { TechLoginForm } from "../../../components/TechLoginForm";
+import { UserLoginForm } from "../../../components/UserLoginForm";
 
 export const LogoutPage = ()=>{
     return(
         <div>
-            <TechLoginForm />
+            <UserLoginForm />
         </div>
     )
 }

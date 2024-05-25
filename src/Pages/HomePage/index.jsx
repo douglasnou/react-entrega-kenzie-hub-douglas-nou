@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { UserContext } from "../../components/Providers/UserContext";
 import { TechProvider } from "../../components/Providers/TechContext";
-import { LoginPage } from "./LoginPage";
+import { DashboardPage } from "./DashboardPage";
 import { LogoutPage } from "./LogoutPage";
 
 export const HomePage = () => {
@@ -10,13 +10,13 @@ export const HomePage = () => {
         <main>
             {user ? (
                 <TechProvider>
-                    <LoginPage />
+                    <DashboardPage />
                 </TechProvider>
             )
                 :
                 (
                     <LogoutPage />
-                )};
+                )}
         </main>
     )
 }

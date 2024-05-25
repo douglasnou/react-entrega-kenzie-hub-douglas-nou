@@ -22,7 +22,7 @@ export const TechList = () => {
                 {
                     techList.map((tech) => (
                         <TechCard setIsOpenTo={setIsOpenTo} isOpenTo={isOpenTo} tech={tech} key={tech.id} />
-                    ));
+                    ))
                 }
             </ul>
             { isOpen ? <CreateTechModal setIsOpen={setIsOpen} /> : null }

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
 import { TechContext } from "../Providers/TechContext";
 import { IoCloseSharp } from "react-icons/io5";
 import styled from "./style.module.scss";
