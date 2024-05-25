@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { UserContext } from "../Providers/UserContext";
 import { Toaster } from "react-hot-toast";
 import styled from "./style.module.scss";
-import logo from "./../../assets/Logo.png"
+import logo from "./../../assets/Logo.png";
 
 export const TechLoginForm = () => {
     const { register, handleSubmit } = useForm();
